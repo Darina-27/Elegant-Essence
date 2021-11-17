@@ -794,3 +794,9 @@ select option {
         padding-right: 25px
     }
 }
+
+/* carousel */
+.carouselsImgs{
+    /* background-color: #fff5ea; */
+    padding: 6rem 8rem 8rem 8rem;
+  }
