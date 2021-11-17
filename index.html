@@ -17,13 +17,135 @@
 	<script src="https://kit.fontawesome.com/879d043470.js" crossorigin="anonymous"></script>
 
 	<!-----------------------------------------FONTS------------------------------------------------------------------------------>
-	
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Niramit:wght@200&family=Raleway:wght@500&family=Syncopate&display=swap" rel="stylesheet">
 	<!----------------------------------------------------------CSS AND JS FILES----------------------------------------------------->
-
+    <link rel="stylesheet" type="text/css" href="nav.css"> 
+    <script type="text/javascript" src="nav.js"></script>    <!---NAV PORTION----->
 	
 </head>
 
 <body>
-	<p>Hello</p>
+	<!---------------------------------------------------------------NAVIGATION----------------------------------------------------->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+
+	<div class="super_container">
+		<!-- Header -->
+		<header class="header">
+			<!-- -----------------Header Main------------------------------- -->
+			<div class="header_main">
+				<div class="container">
+                	<div class="row">
+                    	<!-- Logo -->
+                    	<div class="col-lg-4 col-sm-3 col-3 order-1">
+                        	<div class="logo_container">
+                            	<div class="logo"><img src="logo.jpeg"></div>
+                        	</div>
+                    	</div> <!-- Search -->
+
+                    	<div class="col-lg-5 col-12 order-lg-2 order-3 text-lg-left text-right">
+                    		<div class="header_search">
+                            	<div class="header_search_content">
+                                	<div class="header_search_form_container">
+                                    	<form action="#" class="header_search_form clearfix"> 
+                                    		<input type="search" required="required" class="header_search_input" placeholder="Search for products...">
+                                        	<div class="custom_dropdown" style="display: none;">
+                                            	<div class="custom_dropdown_list"> <span class="custom_dropdown_placeholder clc">All Categories</span> <i class="fas fa-chevron-down"></i>
+                                                	<ul class="custom_list clc">
+                                                    	<li><a class="clc" href="#">All Categories</a></li>
+                                                    	<li><a class="clc" href="#">Computers</a></li>
+                                                    	<li><a class="clc" href="#">Laptops</a></li>
+                                                    	<li><a class="clc" href="#">Cameras</a></li>
+                                                    	<li><a class="clc" href="#">Hardware</a></li>
+                                                    	<li><a class="clc" href="#">Smartphones</a></li>
+                                                	</ul>
+                                            	</div>
+                                        	</div>
+                                        	<button type="submit" class="header_search_button trans_300" value="Submit"><img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1560918770/search.png" alt=""></button>
+                                    	</form>
+                                	</div>
+                            	</div>
+                        	</div>
+                    	</div> <!-- Wishlist -->
+                    	
+                    	<div class="col-lg-3 col-9 order-lg-3 order-2 text-lg-left text-right">
+                        	<div class="wishlist_cart d-flex flex-row align-items-center justify-content-end">
+                            	<div class="wishlist d-flex flex-row align-items-center justify-content-end">
+                                	<div class="wishlist_icon">
+                                		<img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1560918681/heart.png" alt="">
+                                	</div>
+
+                                	<div class="wishlist_content">
+                                    	<div class="wishlist_text"><a href="#">Wishlist</a></div>
+                                    	<div class="wishlist_count">10</div>
+                                	</div>
+                            	</div> <!-- Cart -->
+                            	
+                            	<div class="cart">
+                                	<div class="cart_container d-flex flex-row align-items-center justify-content-end">
+                                    	<div class="cart_icon"> <img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1560918704/cart.png" alt="">
+                                        	<div class="cart_count"><span>3</span></div>
+                                    	</div>
+                                    	<div class="cart_content">
+                                        	<div class="cart_text"><a href="#">Cart</a></div>
+                                        	<div class="cart_price">$185</div>
+                                    	</div>
+                                	</div>
+                            	</div>
+                        	</div>
+                    	</div>
+                	</div>
+            	</div>
+        	</div> 
+        	<!-- Main Navigation -->
+
+        	<nav class="navbar navbar-expand-md  main_nav">
+        		<a class="navbar-brand" href="#"></a>
+
+        		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"><i class="fas fa-grip-lines fa-lg"></i></span>
+  				</button>
+
+  				<div class="container">
+  				 <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+    				<ul class="navbar-nav w-100 justify-content-center">
+      					<li class="nav-item active">
+        					<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      					</li>
+      					<li class="nav-item dropdown ">
+                            <a class="nav-link dropdown-toggle "id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Categories</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                                <a class="dropdown-item" href="#">Necklace</a>
+                                <a class="dropdown-item" href="#">Earrings</a>
+                                <a class="dropdown-item" href="#">Rings</a>
+                                <a class="dropdown-item" href="#">Bracelets</a>
+                                <a class="dropdown-item" href="#">Nose Pins</a>
+                                <a class="dropdown-item" href="#">Gold Coins</a>
+                            </div>
+                        </li>
+
+      					<li class="nav-item">
+        					<a class="nav-link" href="#">Our Stores</a>
+      					</li>
+      					<li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle " id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Current Prices
+                                </a>
+                            <div class="dropdown-menu dropdown-primary " aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="#">Gold</a>
+                                <a class="dropdown-item" href="#">Silver</a>
+                                <a class="dropdown-item" href="#">Diamond</a>
+                                <a class="dropdown-item" href="#">Platinum</a>
+                            </div>
+                        </li>
+      					<li class="nav-item">
+        					<a class="nav-link" href="#">Contact Us</a>
+      					</li>
+   					 </ul>
+    
+  				</div>
+  			</div>
+			</nav>
+		</header>
+		<div style="height: 700px"> </div>
+	</div>
     </body>
     </html>
