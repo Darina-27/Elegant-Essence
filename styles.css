@@ -1,3 +1,8 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
 /* Categories */
 
 .catg{
@@ -10,7 +15,7 @@
   font-size: 45px;
   letter-spacing: 5px;
   text-align: center;
-  margin: 1rem auto 2.5rem auto;
+  margin: auto;
 }
 
 .cat-column{
@@ -29,9 +34,19 @@
     padding-left:  8rem;
   }
 }
+@media screen and  (max-width: 600px){
+  .row{
+    padding: 0rem 4rem 0rem 0rem;
+  }
+  .category-heading{
+    font-size: 40px;
+    letter-spacing: 4px;
+    padding: auto 4rem auto auto;
+  }
+}
 .card-title{
   font-family: 'Syncopate',sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   margin-left: 0;
   margin-right: 0;
 }
