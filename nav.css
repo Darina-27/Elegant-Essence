@@ -798,7 +798,7 @@ select option {
 /* carousel */
 .carouselsImgs{
     /* background-color: #fff5ea; */
-    padding: 6rem 8rem 8rem 8rem;
+    padding: 6rem 8rem 6rem 8rem;
   }
 
   @media screen and (max-width: 600px){
